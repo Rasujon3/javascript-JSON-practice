@@ -7,18 +7,14 @@
 // null
 
 // JSON doesn't suppoer undefined, date, function
-var person = {
-    name: "Sujon", // string
-    age: 23, // number
-    hometown: "Gaibandha",
-    married: false,// bool
-    dob: "1997-05-12",//date
-    test_null: null,//null
-    test_underfined: undefined,//undefined
-    greet: function(){//function
-        console.log(`Hello ${this.name}`);
-    }
+var person1 = {
+    "name": "Sujon", // string
+    "age": 23, // number
+    "hometown": "Gaibandha"
 
-}
-var person_json = JSON.stringify(person);
-console.log(person_json);
+};
+var person1_json = JSON.stringify(person1);
+console.log(person1_json);
+var person1_obj = JSON.parse(person1_json);
+console.log(person1_obj);
+console.log(person1.name);
